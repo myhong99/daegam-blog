@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>대감님의 뉴스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📰 대감님의 뉴스 아카이브</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="archive/2025-04.html">2025년 4월</a>
+    <a href="about.html">소개</a>
+    <a href="blog.html">블로그</a>
+  </nav>
+
+  <main class="news-grid">
+
+    <!-- Make.com이 이 <article> 구조를 반복 삽입 -->
+
+    <article class="news-card">
+      <img src="{{imageUrl}}" alt="뉴스 이미지">
+      <div class="news-text">
+        <p><strong>날짜:</strong> {{pubDate}}</p>
+        <p><strong>제목:</strong> {{title}}</p>
+        <p><strong>내용:</strong></p>
+        <div class="news-content">{{description}}</div>
+        <p><strong>원문:</strong> <a href="{{link}}" target="_blank">[바로가기]</a></p>
+      </div>
+    </article>
+
+    <!-- 추가 기사들이 Make.com을 통해 계속 삽입됩니다 -->
+
+  </main>
+</body>
+</html>
+
+
+
